@@ -1,0 +1,195 @@
+#containerSchedule main {
+  display: block;
+  margin: 40px 0;
+}
+#containerSchedule main .row {
+  padding: 0 25px;
+}
+.fc-timegrid-event-harness-inset .fc-timegrid-event,
+.fc-timegrid-event.fc-event-mirror {
+  box-shadow: none !important;
+}
+.fc td,
+.fc th {
+  border-style: none !important;
+}
+.fc .fc-timegrid-slot-label-cushion {
+  color: #666;
+}
+.fc-day-today {
+  background-color: #ccc;
+}
+.fc-col-header-cell-cushion,
+.fc-event-time,
+.fc-event-title,
+.fc-list-day-cushion a,
+.fc-list td a,
+.fc-list td {
+  font-family: Barlow !important;
+  color: var(--greyLight1);
+}
+.fc * {
+  border-radius: 0;
+}
+.fc .fc-cell-shaded {
+  padding: 15px 14px !important;
+  background-color: rgba(63, 63, 63, 1) !important;
+}
+.fc-list-day .fc-list-day-cushion a {
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--greyLight1) !important;
+}
+.blueRoom {
+  background-color: var(--blue);
+}
+.redRoom {
+  background-color: var(--red);
+}
+.fc-timegrid-axis {
+  background-color: var(--blackLight2);
+}
+.fc .fc-timegrid-slot-label-cushion {
+  padding: 0px 15px !important;
+}
+.fc .fc-timegrid-slot {
+  height: 2em !important;
+}
+.fc .fc-theme-standard {
+  margin: 0 15px !important;
+}
+.fc-col-header-cell.fc-day {
+  background-color: var(--blackLight2) !important;
+}
+.fc .fc-col-header-cell-cushion {
+  color: var(--greyLight0);
+  padding: 10px 0 !important;
+}
+.fc .fc-button-primary {
+  height: 100%;
+  padding: 10px 16px 12px 16px;
+  background-color: var(--blackLight2) !important;
+}
+.fc .fc-scrollgrid,
+.fc-list {
+  background-color: rgba(63, 63, 63, 1) !important;
+  border: 1px solid var(--blackLight2) !important;
+  border-radius: 6px;
+}
+.fc-scrollgrid-section .fc-scrollgrid-section-header td,
+table.fc-scrollgrid thead tr {
+  border-right: 0;
+  border-color: var(--greyLight0);
+}
+.fc .fc-scrollgrid-section-sticky > * {
+  background: none !important;
+}
+.fc .fc-header-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+.fc-header-toolbar h2 {
+  line-height: 40px;
+  margin: auto 0;
+}
+.fc-toolbar-title {
+  display: flex;
+}
+.fc .fc-header-toolbar .fc-toolbar-date {
+  position: relative;
+  color: var(--greyLight1);
+  font-family: var(--font-header);
+  margin: 0 15px;
+  padding-left: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+}
+.fc .fc-header-toolbar .fc-toolbar-date span.divider {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 55%;
+  left: 0;
+  height: 100%;
+  width: 1px;
+  background-color: var(--greyLight0);
+  display: block;
+}
+.fc-header-toolbar .fc-toolbar-date::before {
+  content: "Semana de";
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: var(--greyLight0);
+  display: block;
+  line-height: 20px;
+}
+.fc .fc-header-toolbar {
+  margin-bottom: 10px;
+}
+.fc .fc-header-toolbar .fc-button-group.toggle-buttons {
+  margin-right: 15px;
+}
+.fc-header-toolbar button.fc-button {
+  height: 40px;
+}
+
+button.fc-button.fc-sala01button-button,
+button.fc-button.fc-sala02button-button {
+  width: 100px;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 0 20px;
+  margin: 0 1px;
+  transition: all 0.1s linear;
+}
+button.fc-button.fc-sala01button-button {
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+button.fc-button.fc-sala02button-button {
+  color: var(--red);
+  border: 1px solid var(--red);
+}
+button.fc-button.fc-sala01button-button.active {
+  background-color: var(--blue);
+  color: var(--blackLight);
+}
+button.fc-button.fc-sala02button-button.active {
+  background-color: var(--red);
+  color: var(--blackLight);
+}
+button.fc-button.fc-prev-button,
+button.fc-button.fc-next-button {
+  color: var(--greyLight0);
+  border: 1px solid var(--greyLight0);
+}
+.fc-toolbar-buttons .schedule-navigation-buttons .fc-button:last-child {
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.fc-toolbar-buttons .schedule-navigation-buttons .fc-button:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+@media screen and (max-width: 992px) {
+  section#home.Schedule {
+    height: auto;
+  }
+  .fc .fc-header-toolbar {
+    flex-flow: column;
+    align-items: flex-start;
+  }
+  .fc .fc-toolbar-buttons {
+    display: flex;
+    width: 100%;
+  }
+  .fc .fc-header-toolbar .fc-button-group.toggle-buttons {
+    margin-top: 15px;
+  }
+  .fc .fc-button-group.schedule-navigation-buttons {
+    margin-top: 15px;
+    margin-left: auto;
+  }
+}

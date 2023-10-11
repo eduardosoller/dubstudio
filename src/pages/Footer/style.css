@@ -1,0 +1,82 @@
+footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: var(--blackLight2);
+}
+footer .row {
+  width: 100%;
+}
+footer .row .col {
+  position: relative;
+  z-index: 2;
+}
+footer address {
+  font-style: normal !important;
+}
+footer address p,
+footer address a {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--greyLight0);
+  padding: 0;
+}
+footer .carimbo {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 230px;
+  height: auto;
+}
+footer address i.material-icons {
+  font-size: 20px;
+  margin: 0 10px -5px 0;
+}
+footer address a {
+  display: flex;
+  align-items: center;
+}
+footer h4 {
+  color: var(--purple);
+  font-size: 26px;
+  margin: 0;
+}
+footer .footer-title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+footer .footer-title hr {
+  display: inline-block;
+  width: 100%;
+  margin-top: 45px;
+  margin-left: -6px;
+  height: 2px;
+  line-height: 50px;
+  border: 0;
+  background-color: var(--purple);
+}
+.whats-icon {
+  width: 18px;
+  height: 18px;
+  fill: var(--greyLight0);
+  margin-right: 10px;
+}
+@media screen and (max-width: 992px) {
+  footer {
+    overflow: hidden;
+  }
+  footer .carimbo {
+    position: relative;
+    top: unset;
+    left: unset;
+    transform: unset;
+    width: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: -50px;
+  }
+}

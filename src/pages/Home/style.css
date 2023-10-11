@@ -1,0 +1,214 @@
+section#home.Home main .row {
+  overflow: hidden;
+}
+section#home.Home {
+  position: relative;
+}
+section#home #containerQuemsomos {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+section#home #containerQuemsomos .headline {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+section#home #containerQuemsomos .headline span {
+  white-space: nowrap;
+  display: block;
+}
+section#home #containerQuemsomos .headline span.outlined {
+  color: var(--black);
+  text-shadow: -1px -1px 0 var(--greyLight1), 1px -1px 0 var(--greyLight1),
+    -1px 1px 0 var(--greyLight1), 1px 1px 0 var(--greyLight1);
+}
+section#home #containerQuemsomos .headline .carimbo {
+  z-index: -1;
+  background: url("../../assets/img/carimbo.png") no-repeat;
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  position: absolute;
+  top: 50px;
+  left: -100px;
+}
+section#home #containerQuemsomos .headline span.script-font {
+  font-family: var(--font-script);
+  font-weight: 400;
+  color: var(--pink);
+  font-size: clamp(1rem, 2vw + 1rem, 4rem);
+  line-height: 20px;
+  margin-left: 5px;
+}
+section#home #containerQuemsomos .headline h2 {
+  letter-spacing: -2px;
+  font-size: 10vw;
+  line-height: 9vw;
+  text-shadow: -2px 2px 6px var(--black);
+}
+section#home #containerQuemsomos .headline hr {
+  width: 50px;
+  height: 3px;
+  overflow: visible;
+  text-align: left;
+  border: 0;
+  margin: 10px 0 0 0;
+  background-color: var(--greyLight1);
+  margin-left: -50px;
+}
+section#home #containerQuemsomos .headline p {
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--greyLight1);
+  padding-left: 5px;
+}
+section#home #containerStudios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section#home #containerStudios .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section#home.Home .scroll-arrow-container {
+  display: none;
+}
+section#home #containerStudios article {
+  width: 100%;
+  position: relative;
+  margin-bottom: 25px;
+}
+section#home #containerStudios article img {
+  width: 100%;
+  cursor: pointer;
+}
+section#home #containerStudios .card3d {
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  background-color: transparent;
+  position: relative;
+  display: block;
+  height: calc(100% - 15px);
+  line-height: 0;
+  overflow: hidden;
+  border-radius: var(--inputRadius);
+}
+section#home #containerStudios .card3d:hover {
+  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.8);
+}
+section#home #containerStudios h3 {
+  cursor: pointer;
+  font-size: 52px;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  text-align: center;
+  opacity: 0.6;
+}
+
+section#home #containerStudios h3 span {
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+}
+section#home #containerStudios #Studio01 h3,
+section#home #containerStudios #Studio01 span {
+  color: #34c3fc;
+  text-shadow: 2px 2px 8px #000;
+}
+section#home #containerStudios #Studio02 h3,
+section#home #containerStudios #Studio02 span {
+  color: #ff0000;
+  text-shadow: 2px 2px 8px #000;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 992px) and (orientation: portrait) {
+  section#home.Home {
+    /* height: 100vh; */
+  }
+}
+
+@media screen and (max-width: 992px) {
+  section#home #containerQuemsomos {
+    height: 50%;
+  }
+  section#home #containerQuemsomos .headline {
+    position: relative;
+    width: 80%;
+  }
+  section#home #containerQuemsomos .headline span.script-font {
+    font-size: 6vw;
+  }
+  section#home #containerQuemsomos .headline h2 {
+    font-size: 16vw;
+    line-height: 13vw;
+  }
+  section#home #containerQuemsomos .headline hr {
+    display: none;
+  }
+  section#home #containerQuemsomos .headline p {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+    padding: 20px 15px 20px 0;
+  }
+  section#home #containerStudios {
+    margin: auto 0;
+    height: 50%;
+    padding: 0 15px 30px 15px;
+  }
+  section#home #containerStudios .inner {
+    padding-bottom: 50px;
+  }
+  section#home #containerStudios article div img {
+    margin: -20px 0;
+  }
+  section#home #containerStudios article {
+    margin-bottom: 15px;
+  }
+  section#home #containerStudios .card3d {
+    overflow: hidden;
+    border-radius: var(--inputRadius);
+  }
+  section#home #containerStudios h3 {
+    font-size: 7vw;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0.6;
+  }
+  section#home #containerStudios h3 span {
+    display: none;
+  }
+  section#home.Home .scroll-arrow-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+  section#home.Home .scroll-arrow-container .scroll-arrow {
+    display: flex;
+    fill: var(--purple);
+    width: 18px;
+    padding: 0;
+  }
+}

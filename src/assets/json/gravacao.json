@@ -1,0 +1,42 @@
+{
+  "page": "gravacao",
+  "color": "var(--pink)",
+  "formTitle": "MARCAR GRAVAÇÃO",
+  "title": "SOBRE AS GRAVAÇÕES",
+  "roomsize" : 24,
+  "timesTitle" : "HORÁRIOS",
+  "times" : "16h-22h",
+  "description": "Gravações profissionais podem ser feitas com a banda toda tocando junto (16 canais ao vivo) ou tocando cada instrumento separadamente (por canal). O processo de gravação do dub Studio passa por meios digitais e analógicos, incluindo captação, mixagem e masterização. As gravações devem ser agendadas por email ou telefone para adequar o tempo de estúdio conforme cada projeto.",
+  "prices" : [
+    {"th": "GRAVAÇÃO", "col2": ""},
+    {"col1": "por canal", "col2": "R$ 80 / hora"},
+    {"col1": "16 canais ao vivo", "col2": "R$ 90 / hora"},
+    {"th": "LIVE", "col2": "Consulte-nos"},
+    {"th": "INSTRUMENTOS", "col2": ""},
+    {"col1": "guitarra/baixo", "col2": "R$ 15 / ensaio"},
+    {"col1": "pratos", "col2": "R$ 10 cada / ensaio"},
+    {"col1": "piano", "col2": "R$ 25 / ensaio"}
+],
+"equipments": 
+{ "mics":[
+  { "id": 1, "title": "AKG 1", "imgSrc": "https://www.dubstudio.com.br/web/uploads/gravacao/mics/akg1.jpg" },
+  { "id": 2, "title": "AKG 2", "imgSrc": "https://www.dubstudio.com.br/web/uploads/gravacao/mics/akg2.jpg" },
+  { "id": 3, "title": "B1", "imgSrc": "https://www.dubstudio.com.br/web/uploads/gravacao/mics/b1.jpg" },
+  { "id": 4, "title": "B2 PRO", "imgSrc": "https://www.dubstudio.com.br/web/uploads/gravacao/mics/b2.jpg" },
+  { "id": 5, "title": "SM57", "imgSrc": "https://www.dubstudio.com.br/web/uploads/gravacao/mics/sm57.jpg" },
+  { "id": 6, "title": "SM58", "imgSrc": "https://www.dubstudio.com.br/web/uploads/gravacao/mics/sm58.jpg" }
+], 
+"extras": [
+    { "id": 1, "title": "AKAY", "imgSrc": "https://www.dubstudio.com.br/web/uploads/gravacao/extras/AKAY.jpg" },
+    { "id": 2, "title": "GIANNINI", "imgSrc": "https://www.dubstudio.com.br/web/uploads/gravacao/extras/GIAN.jpg" },
+    { "id": 3, "title": "MESA", "imgSrc": "https://www.dubstudio.com.br/web/uploads/gravacao/extras/MESA.jpg" },
+    { "id": 4, "title": "MICS", "imgSrc": "https://www.dubstudio.com.br/web/uploads/gravacao/extras/MICS.jpg" }
+]
+},
+"calendar":{"client_id": "studiodub%40gmail.com", 
+  "times": [  
+    { "start": 16, "end": 17, "disabled": false },
+    { "start": 18, "end": 19, "disabled": false },
+    { "start": 20, "end": 21, "disabled": false }]
+}
+}

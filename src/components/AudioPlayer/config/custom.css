@@ -1,0 +1,37 @@
+.react-jinke-music-player-main section {
+  min-height: auto;
+}
+.react-jinke-music-player-mobile,
+.audio-lists-panel-mobile {
+  padding-top: 70px;
+}
+.react-jinke-music-player-main .music-player-panel,
+.react-jinke-music-player-mobile,
+.audio-lists-panel-mobile {
+  background: rgb(41, 41, 41, 0.85);
+}
+.react-jinke-music-player-mobile-header-right svg {
+  width: 40px;
+  height: 40px;
+}
+.react-jinke-music-player-mobile-header.group {
+  margin-top: 20px;
+}
+.react-jinke-music-player-mobile-singer-name:before,
+.react-jinke-music-player-mobile-singer-name:after {
+  display: none;
+}
+.react-jinke-music-player-mobile-singer-name {
+  font-size: 18px;
+  color: #f1f1f1;
+  background: var(--purple);
+}
+span.destroy-btn {
+  background: var(--blackLight);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+}
+span.destroy-btn svg {
+  fill: red;
+}

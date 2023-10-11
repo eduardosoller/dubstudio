@@ -1,0 +1,353 @@
+section#home.Recordings #containerRecordingsHeadline {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+section#home.Recordings #containerRecordingsHeadline header {
+  background-color: #202020;
+}
+section#home.Recordings #containerRecordingsHeadline .headline {
+  position: absolute;
+  left: 100px;
+  width: 100%;
+}
+section#home.Recordings #containerRecordingsHeadline .headline span.outlined {
+  color: var(--black);
+  text-shadow: -1px -1px 0 var(--greyLight1), 1px -1px 0 var(--greyLight1),
+    -1px 1px 0 var(--greyLight1), 1px 1px 0 var(--greyLight1);
+}
+section#home.Recordings #containerRecordingsHeadline .headline span {
+  color: var(--greyLight1);
+  white-space: nowrap;
+  display: block;
+}
+section#home.Recordings #containerRecordingsHeadline .headline h2 {
+  font-size: 9vw;
+  line-height: 8vw;
+  text-shadow: -2px 2px 6px var(--black);
+}
+section#home.Recordings #containerRecordingsHeadline .headline hr {
+  width: 50px;
+  height: 1px;
+  overflow: visible;
+  text-align: left;
+  border: 0;
+  margin: 10px 0 0 0;
+  background-color: var(--greyLight1);
+  margin-left: -50px;
+}
+section#home.Recordings #containerRecordingsHeadline .headline p {
+  font-size: 22px;
+  line-height: 26px;
+  margin: 16px 0;
+  text-align: justify;
+  opacity: 0.6;
+}
+section#home.Recordings #containerRecordingsStudios {
+  margin: 60px;
+}
+section#home.Recordings #containerRecordingsStudios.background-img {
+  background-image: url("../../assets/img/rec/MESA3D.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* STUDIO INFO */
+
+section#containerRecordingInfo {
+  background-color: var(--black);
+  height: auto;
+  z-index: 30;
+  position: relative;
+}
+section#containerRecordingInfo p {
+  font-size: 18px;
+  margin: 0;
+  color: var(--greyLight0);
+}
+section#containerRecordingInfo .infoBar {
+  background-color: var(--blackLight);
+  display: flex;
+  z-index: 30;
+  margin-bottom: 40px;
+}
+section#containerRecordingInfo .infoBar .info .pill {
+  display: inline-flex;
+  padding: 4px 12px;
+  margin: 0 5px 5px 0;
+  background-color: var(--blackLight2);
+  border-radius: 4px;
+  color: var(--greyLight0);
+  font-family: var(--font-text);
+  font-size: 18px;
+  white-space: nowrap;
+}
+section#containerRecordingInfo .infoBar .info .pill sup {
+  top: 5px;
+  font-size: 65%;
+}
+section#containerRecordingInfo .infoBar .info {
+  padding: 15px 0 15px 80px;
+}
+section#containerRecordingInfo h4 {
+  font-weight: 500;
+  color: var(--main-color);
+  font-size: 18px;
+  line-height: 35px;
+}
+section#containerRecordingInfo row {
+  padding-right: 25px;
+  height: calc(100% - 30px);
+}
+#containerRecordingInfo .col {
+  padding: 0;
+}
+
+/*END STICKY*/
+#containerRecordingInfo .topbar {
+  height: 50px;
+  background-color: var(--black);
+}
+#containerRecordingInfo .text-container {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 80px 40px 80px;
+  min-height: 200px;
+}
+#containerRecordingInfo .titleBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/img/bg-info-title-2.jpg");
+  z-index: -1;
+  opacity: 0.4;
+}
+#containerRecordingInfo .title h4 {
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+  padding: 80px 20px 0px 80px;
+  text-shadow: 0px 6px 3px var(--blackLight2);
+}
+#containerRecordingInfo hr {
+  display: block;
+  width: 40px;
+  height: 3px;
+  border: 0;
+  background-color: var(--main-color);
+  margin: 60px 80px;
+}
+table#recordingPriceTable {
+  position: relative;
+  z-index: 9999;
+  width: 90%;
+  border-collapse: separate;
+  background: #232323;
+  border-radius: var(--radius);
+  font-family: var(--font-text);
+  border: 2px solid var(--main-color);
+  margin: 50px 0 -7.5% 0;
+  box-shadow: -5px 4px 35px rgb(0, 0, 0, 0.3);
+}
+table#recordingPriceTable .tableTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 0;
+}
+table#recordingPriceTable .tableTitle svg {
+  width: 100%;
+  max-width: 140px;
+  fill: var(--main-color);
+}
+table#recordingPriceTable .tableTitle svg.rayRight {
+  transform: rotate(180deg);
+  transform: scaleX(-1);
+}
+table#recordingPriceTable h3 {
+  padding: 15px;
+  font-size: 26px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--main-color);
+}
+table#recordingPriceTable td {
+  font-size: 22px;
+  padding: 12px 25px;
+  border-bottom: 1px solid#151515;
+}
+table#recordingPriceTable tr:last-child td {
+  border-bottom: 0;
+}
+table#recordingPriceTable td.th2 {
+  font-weight: 500;
+  color: var(--main-color);
+}
+table#recordingPriceTable td.price {
+  font-weight: 500;
+  color: var(--greyLight1);
+}
+table#recordingPriceTable td.price span {
+  color: var(--greyLight);
+}
+#recordingPriceTable tr {
+  color: var(--greyLight0);
+}
+#recordingPriceTable tfoot td {
+  border: 0 !important;
+  text-align: center;
+  font-size: 16px;
+}
+#recordingPriceTable tfoot td span {
+  display: block;
+  white-space: nowrap;
+}
+#containerRecordingInfo .col.recordingPriceTable-container {
+  position: relative;
+}
+/*FIM STUDIO INFO*/
+#containerRecordingEquipments {
+  position: relative;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  background-color: var(--blackLight);
+}
+#containerRecordingEquipments header {
+  position: absolute;
+  top: -40px;
+  width: 80px;
+  height: calc(100% + 40px);
+  background-color: #282828;
+}
+#containerRecordingEquipments #containerSliders {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 1000px;
+}
+#containerRecordingEquipments .swiper-container {
+  padding: 40px 0;
+  margin-left: 80px;
+  width: calc(100% - 80px);
+  height: 100%;
+}
+
+#containerRecordingEquipments .equipmentTitle {
+  display: block;
+}
+#containerRecordingEquipments .equipmentTitle h3 {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%) rotate(-90deg);
+  color: var(--main-color);
+  font-size: 40px;
+}
+#containerRecordingEquipments .equipmentImg .bg-title {
+  z-index: 20;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgb(14, 14, 14);
+  background: linear-gradient(
+    0deg,
+    rgb(14, 14, 14) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+#containerRecordingEquipments .equipmentImg {
+  z-index: 10;
+  position: relative;
+  line-height: 0;
+  border: 2px solid #3f3f3f;
+  border-radius: 6px;
+  margin: 0;
+  overflow: hidden;
+}
+#containerRecordingEquipments .equipmentImg img {
+  width: 100%;
+  border-radius: 4px;
+}
+#containerRecordingEquipments .equipmentImg h4 {
+  z-index: 30;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+@media screen and (max-width: 1200px) {
+  table#recordingPriceTable td {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  section#home.Recordings {
+    height: 100vh;
+  }
+  section#home.Recordings #containerRecordingsHeadline .headline {
+    width: auto;
+    left: 20px;
+  }
+  section#home.Recordings #containerRecordingsHeadline .headline h2 {
+    font-size: 14vw;
+    line-height: 100%;
+  }
+  #containerRecordingInfo .title h4 {
+    font-size: 30px;
+    padding: 80px 20px 0px 80px;
+  }
+  #containerRecordingInfo .col.recordingPriceTable-container {
+    padding: 0 20px;
+  }
+
+  table#recordingPriceTable {
+    width: 100%;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 20px auto;
+  }
+  table#recordingPriceTable td {
+    font-size: 18px;
+  }
+  div#containerRecordingsStudios {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+  section#home.Recordings div#containerRecordingsStudios {
+    margin: 0;
+  }
+  #containerRecordingEquipments header {
+    display: none;
+  }
+  #containerRecordingEquipments .swiper-container {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 420px) {
+  nav#secondary-navigation li a {
+    padding: 18px 8px;
+    font-size: 15px;
+  }
+  #containerRecordingEquipments .equipmentTitle h3 {
+    font-size: 30px;
+  }
+}

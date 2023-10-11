@@ -1,0 +1,75 @@
+{
+  "sala01": {
+  "page": "estudios",
+  "color": "var(--blue)",
+  "number": "SALA 01",
+  "title": "SALA AZUL",
+  "formTitle": "MARCAR ENSAIO",
+  "description": "Sala com tratamento acústico profissional projetado para Ensaio e Gravação de ensaio, com reverberação mais “viva”. Possui ar-condicionado, controle de iluminação, amplificadores com cabos, PA com microfones e bateria (sem pratos).",
+  "image" : "https://dubstudio.com.br/web/uploads/estudios/sala01_full-size.jpg",
+  "roomsize" : 20,
+  "timesTitle" : "HORÁRIOS",
+  "pandemic-times":  "17h às 24h",
+  "times" : "16:30h, 19:00h e 21:30h",
+  "prices" : [
+    {"th": "ENSAIO", "col2": "R$ 40 / hora"},
+    {"th": "GRAVAÇÃO", "col2": ""},
+    {"col1": "ensaio", "col2": "+ R$ 15"},
+    {"col1": "vídeo", "col2": "+ R$ 30 / música"},
+    {"th": "INSTRUMENTOS", "col2": ""},
+    {"col1": "guitarra/baixo", "col2": "R$ 15 / ensaio"},
+    {"col1": "pratos", "col2": "R$ 10 cada / ensaio"}
+  ],
+  "calendar":{"client_id": "6ul0kec8jcjhe693o9ktsf4f94@group.calendar.google.com",
+    "times": [
+    { "start": "16:30", "end": "18:30" },
+    { "start": "19:00", "end": "21:00" },
+    { "start": "21:30", "end": "23:30" }
+  ]
+  },
+  "equipments": [
+    {"title": "FENDER FRONTMAN 212R", "image": "https://www.dubstudio.com.br/web/uploads/estudios/fend.jpg"},
+    {"title": "PEAVEY BANDIT 112", "image": "https://www.dubstudio.com.br/web/uploads/estudios/peavey.jpg"},
+    {"title": "HIWATT B100-15", "image": "https://www.dubstudio.com.br/web/uploads/estudios/hivatt.jpg"},
+    {"title": "PEARL SOUNDCHECK", "image": "https://www.dubstudio.com.br/web/uploads/estudios/pearl.jpg"}
+  ]
+},
+"sala02": {
+  "color": "var(--red)",
+  "formTitle": "MARCAR ENSAIO",
+  "number": "SALA 02",
+  "title": "SALA VERMELHA",
+  "description": "Sala com tratamento acústico profissional projetado para gravação profissional, com reverberação controlada. Possui ar-condicionado, controle de iluminação, amplificadores com cabos, PA com microfones e bateria (sem pratos).",
+  "image" : "https://www.dubstudio.com.br/web/uploads/estudios/sala02_full-size.jpg",
+  "roomsize" : 24,
+  "timesTitle" : "HORÁRIOS",
+  "pandemic-times": "17h-19h e 20h-22h",
+  "times" : "16h às 22h",
+  "prices" : [
+    {"th": "ENSAIO", "col2": "R$ 40 / hora"},
+    {"th": "GRAVAÇÃO", "col2": ""},
+    {"col1": "ensaio", "col2": "+ R$ 15"},
+    {"col1": "vídeo (por música)", "col2": "+ R$ 30"},
+    {"col1": "vídeo  (por hora)", "col2": "+ R$ 60"},
+    {"th": "LIVE", "col2": "Consulte-nos"},
+    {"th": "INSTRUMENTOS", "col2": ""},
+    {"col1": "guitarra/baixo", "col2": "R$ 15 / ensaio"},
+    {"col1": "pratos", "col2": "R$ 10 cada / ensaio"},
+    {"col1": "piano", "col2": "R$ 25 / ensaio"}
+  ],
+  "calendar":{"client_id": "studiodub%40gmail.com",
+    "times": [
+      { "start": "15:00", "end": "17:00" },
+      { "start": "17:30", "end": "19:30" },
+      { "start": "20:00", "end": "22:00" }
+    ]
+  },
+  "equipments": [
+    {"title": "MARSHALL MG101CFX", "image": "https://www.dubstudio.com.br/web/uploads/estudios/marshall.jpg"},
+    {"title": "FENDER STAGE 100", "image": "https://www.dubstudio.com.br/web/uploads/estudios/fender_02.jpg"},
+    {"title": "BEHRINGER BX3000t", "image": "https://www.dubstudio.com.br/web/uploads/estudios/behringer.jpg"},
+    {"title": "YAMAHA STAGE CUSTOM", "image": "https://www.dubstudio.com.br/web/uploads/estudios/yamaha.jpg"},
+    {"title": "PIANO OTTO HALBEN", "image": "https://www.dubstudio.com.br/web/uploads/estudios/piano.jpg"}
+  ]
+}
+}

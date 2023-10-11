@@ -1,0 +1,281 @@
+section#containerPlayerHome {
+  padding: 80px 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+section#containerPlayerHome header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+section#containerPlayerHome header h3 {
+  font-weight: 700;
+  color: var(--pink);
+  z-index: 15;
+  white-space: nowrap;
+}
+section#containerPlayerHome header hr {
+  display: inline-block;
+  width: 100%;
+  margin-top: 45px;
+  margin-left: -12px;
+  height: 2px;
+  line-height: 50px;
+  border: 0;
+  background-color: var(--pink);
+}
+
+/* SEARCH FIELD */
+section#containerPlayerHome .input-field.player-search label,
+.input-field.player-search label.active {
+  padding-left: 30px;
+  color: var(--pink) !important ;
+  font-size: 16px;
+}
+.input-field.player-search input[type="text"]:focus {
+  border-bottom: 1px solid var(--pink) !important;
+}
+section#containerPlayerHome .input-field {
+  margin: 0;
+}
+section#containerPlayerHome .input-field.player-search input {
+  width: calc(100% - 40px);
+  padding-left: 40px;
+  border-radius: var(--inputRadius) 0 0 var(--inputRadius);
+  background-color: rgb(255, 255, 255, 0.1);
+}
+section#containerPlayerHome .input-field.player-search i.material-icons {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  z-index: 5;
+  font-size: 24px;
+  color: var(--greyLight0);
+}
+/* FILTERS */
+
+.list_filters .label {
+  height: 40px;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--greyLight0);
+  margin-right: 15px;
+}
+section#containerPlayerHome nav {
+  width: auto;
+  height: 41px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+section#containerPlayerHome nav li {
+  display: inline-flex;
+}
+section#containerPlayerHome nav li:first-child button {
+  border-radius: var(--inputRadius) 0 0 var(--inputRadius);
+}
+section#containerPlayerHome nav li:last-child button {
+  border-radius: 0 var(--inputRadius) var(--inputRadius) 0;
+}
+section#containerPlayerHome nav button {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255, 0.1);
+  color: var(--pink);
+  border: 0;
+  padding: 0 15px;
+  height: 41px;
+  font-weight: 500;
+}
+section#containerPlayerHome nav button.active {
+  background-color: var(--pink);
+  color: var(--blackLight);
+}
+section#containerPlayerHome nav a:first-child {
+  padding-left: 0;
+}
+.playlist .col.s3 {
+  margin: 0;
+}
+.playlist-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0 15px 0;
+}
+.playlist-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.items-counter {
+  color: var(--greyLight0);
+  font-size: 16px;
+  font-family: var(--font-text);
+}
+.swiper-button-disabled {
+  opacity: 0.5;
+}
+.playlist-prev,
+.playlist-next {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--inputRadius);
+  border: 1px solid var(--greyLight0);
+  color: var(--greyLight0);
+  width: 40px;
+  height: 40px;
+}
+.playlist-prev {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.playlist-next {
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.playlist-prev svg,
+.playlist-next svg {
+  width: 22px;
+  height: 22px;
+}
+.playlist .card {
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: var(--radius);
+  background-color: var(--black);
+  border: 2px solid var(--black);
+}
+.playlist .notfound img {
+  width: 120px;
+}
+.playlist .notfound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 370px;
+  opacity: 0.6;
+  text-align: center;
+  margin: auto;
+}
+.playlist .card-img {
+  position: relative;
+}
+.playlist .card-img .play-icon {
+  opacity: 0;
+  width: 50px;
+  position: absolute;
+  position: absolute;
+  margin-left: -15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease, margin 0.3s ease;
+}
+.playlist .card:hover .card-img .play-icon {
+  opacity: 1;
+  margin-left: 0;
+}
+.playlist .card-img .play-icon path {
+  opacity: 1;
+  fill: var(--pink);
+  stroke: none;
+}
+
+.playlist .card-img img {
+  width: 100%;
+  transition: opacity 0.3s ease;
+}
+.playlist .card .card-img:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--black);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.playlist .card:hover .card-img:before {
+  opacity: 0.8;
+}
+.playlist .card-content {
+  position: relative;
+  padding: 0;
+}
+.playlist .card-content span {
+  text-rendering: optimizeLegibility;
+  position: absolute;
+  top: -45px;
+  right: 10px;
+  color: var(--black);
+  background-color: var(--pink);
+  font-size: 13px;
+  border-radius: 2px;
+  padding: 0 5px;
+  font-weight: 700;
+}
+.playlist .card-content .card-title {
+  margin: 10px 15px 0 15px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: normal;
+  color: var(--greyLight2);
+  white-space: nowrap;
+}
+.playlist .card-content .card-text {
+  margin: 0 15px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  color: var(--greyLight0);
+}
+/* RESPONSIVE */
+@media screen and (max-width: 992px) {
+  section#containerPlayerHome header h3 {
+    font-size: 50px;
+    white-space: normal;
+  }
+  section#containerPlayerHome header hr {
+    display: none;
+  }
+  section#containerPlayerHome {
+    height: auto;
+  }
+  .playlist .row {
+    display: block;
+  }
+  .playlist .card {
+    cursor: pointer;
+    border-radius: var(--inputRadius);
+  }
+  .playlist .card-content span {
+    font-size: 10px;
+    position: absolute;
+    top: -35px;
+    right: 5px;
+  }
+  .playlist .card-content .card-title {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .playlist .card-content .card-text {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .playlist .card-img .play-icon {
+    width: 30px;
+  }
+  .playlist .row .col {
+    padding: 0 0.75em 0 0.75em !important;
+  }
+}
