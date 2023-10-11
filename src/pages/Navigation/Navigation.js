@@ -58,12 +58,12 @@ export default function Navigation() {
           </li>
           <li>
             <NavLink to="/estudios/sala01" className="sala01Link">
-              <span> SALA 01 </span>
+              <span> SALA AZUL </span>
             </NavLink>
           </li>
           <li>
             <NavLink to="/estudios/sala02" className="sala02Link">
-              <span> SALA 02</span>
+              <span> SALA VERMELHA</span>
             </NavLink>
           </li>
           <li>

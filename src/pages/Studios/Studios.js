@@ -27,7 +27,7 @@ function Studios(props) {
     setPrices([])
     const loadTextData = async () => {
       const link = sala === 'sala01' ? 'salaazul' : sala === 'sala02' ? 'salavermelha' : ''
-      const wp = await api.get(`https://dubstudio.com.br/loja/wp-json/wp/v2/${link}`)
+      const wp = await api.get(`/${link}`)
       const priceTable = [
         { th: 'ENSAIO', col2: wp.data[0].valor_de_ensaio },
         { th: 'GRAVAÇÃO', col2: '' },
@@ -49,7 +49,7 @@ function Studios(props) {
     loadTextData()
   }, [sala])
   useEffect(() => {
-    console.log(prices)
+    // console.log(prices)
   }, [prices])
   useEffect(() => {
     // eslint-disable-next-line react/prop-types
@@ -69,7 +69,7 @@ function Studios(props) {
               <div id="containerStudio" className="flex-container">
                 <header className="title">
                   <h3>
-                    <span>ESTÚDIOS</span> {`// ${db[sala].number}`}
+                    <span>ESTÚDIOS</span> {`// ${db[sala].title}`}
                   </h3>
                   <div className="bigNumber">{db[sala].title}</div>
                 </header>

@@ -64,37 +64,37 @@ function App() {
               <div id="containerStudios" className="col s12 l6">
                 <div className="inner">
                   <article id="Studio01">
-                  <NavLink to="/estudios/sala01">
-                    <animated.div
-                      className="card3d"
-                      onMouseMove={({ clientX: x, clientY: y }) =>
-                        setA({ xys: calcA(x, y) })
-                      }
-                      onMouseLeave={() => setA({ xys: [0, 0, 1] })}
-                      style={{ transform: propsA.xys.interpolate(transA) }}
-                    >
-                      <img src={sala01home} alt="SALA 01" />
-                      <h3>
-                        SALA 01<span>17h-19h | 19h-21h | 21h-23h</span>
-                      </h3>
-                    </animated.div>
+                    <NavLink to="/estudios/sala01">
+                      <animated.div
+                        className="card3d"
+                        onMouseMove={({ clientX: x, clientY: y }) =>
+                          setA({ xys: calcA(x, y) })
+                        }
+                        onMouseLeave={() => setA({ xys: [0, 0, 1] })}
+                        style={{ transform: propsA.xys.interpolate(transA) }}
+                      >
+                        <img src={sala01home} alt="SALA AZUL" />
+                        <h3>
+                          SALA AZUL<span>16:30h | 19:00h | 21:30h</span>
+                        </h3>
+                      </animated.div>
                     </NavLink>
                   </article>
                   <article id="Studio02">
-                  <NavLink to="/estudios/sala02">
-                    <animated.div
-                      className="card3d"
-                      onMouseMove={({ clientX: x, clientY: y }) =>
-                        setB({ xys: calcB(x, y) })
-                      }
-                      onMouseLeave={() => setB({ xys: [0, 0, 1] })}
-                      style={{ transform: propsB.xys.interpolate(transB) }}
-                    >
-                      <img src={sala02home} alt="SALA 02" />
-                      <h3>
-                        SALA 02<span>16h-18h | 18h-20h | 20h-22h</span>
-                      </h3>
-                    </animated.div>
+                    <NavLink to="/estudios/sala02">
+                      <animated.div
+                        className="card3d"
+                        onMouseMove={({ clientX: x, clientY: y }) =>
+                          setB({ xys: calcB(x, y) })
+                        }
+                        onMouseLeave={() => setB({ xys: [0, 0, 1] })}
+                        style={{ transform: propsB.xys.interpolate(transB) }}
+                      >
+                        <img src={sala02home} alt="SALA VERMELHA" />
+                        <h3>
+                          SALA VERMELHA<span>15:00h | 17:30h | 20:00h</span>
+                        </h3>
+                      </animated.div>
                     </NavLink>
                   </article>
                 </div>
@@ -102,7 +102,7 @@ function App() {
             </div>
           </main>
         </div>
-        <div className="scroll-arrow-container"><ScrollArrow className="scroll-arrow"/></div>
+        <div className="scroll-arrow-container"><ScrollArrow className="scroll-arrow" /></div>
       </section>
       <ShopHome />
       <Player />

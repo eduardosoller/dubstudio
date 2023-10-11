@@ -35,13 +35,14 @@ $mail->isSMTP();
 // SMTP::DEBUG_CLIENT = client messages
 // SMTP::DEBUG_SERVER = client and server messages
 $mail->SMTPDebug = SMTP::DEBUG_SERVER;
-$mail->Host = '';
+$mail->Host = 'smtp.kinghost.net';
 $mail->Port = 587;
 $mail->SMTPAuth = true;
-$mail->Username = '';
-$mail->Password = '';
+$mail->Username = 'smtp@dubstudio.com.br';
+$mail->Password = 'soller4578';
 $mail->setFrom('site@dubstudio.com.br', '[SITE DUBSTUDIO]');
 $mail->addReplyTo($post_data['email'], $post_data['name']);
+
 $mail->addAddress('studiodub@gmail.com');
 $mail->Subject = $post_data['subject'];
 //convert HTML into a basic plain-text alternative body

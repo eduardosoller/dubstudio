@@ -3,9 +3,11 @@ section#shopHome {
   position: relative;
   background-color: var(--greyLight2);
 }
+
 section#shopHome .row .col {
   padding: 0;
 }
+
 section#shopHome header {
   width: 100%;
   display: flex;
@@ -14,11 +16,13 @@ section#shopHome header {
   padding: 20px;
   margin-bottom: auto;
 }
+
 section#shopHome header h3 {
   color: var(--purple);
   font-size: 50px;
   font-weight: 700;
 }
+
 section#shopHome header a.linkShop {
   font-size: 18px;
   font-weight: 500;
@@ -30,10 +34,12 @@ section#shopHome header a.linkShop {
   padding: 10px 20px;
   transition: color 0.3s ease-out, background-color 0.3s ease-out;
 }
+
 section#shopHome header a.linkShop:hover {
   color: var(--greyLight2);
   background-color: var(--purple);
 }
+
 section#shopHome #containerShopImage {
   position: relative;
   z-index: 2;
@@ -42,10 +48,12 @@ section#shopHome #containerShopImage {
   justify-content: center;
   flex-direction: column;
 }
+
 section#shopHome #containerShopImage .featured-image {
   position: absolute;
   right: -50px;
 }
+
 section#shopHome #containerShopImage .featured-image img {
   width: 100%;
 }
@@ -57,16 +65,19 @@ section#shopHome #containerShopInfo {
   flex-direction: column;
   background-color: #d9d9d9;
 }
+
 section#shopHome .bg {
   position: absolute;
   top: 30px;
   right: 0;
   z-index: 1;
 }
+
 section#shopHome #containerShopInfo .inner {
   z-index: 10;
   margin: auto 60px;
 }
+
 section#shopHome #containerShopInfo h4 {
   font-weight: 700;
   font-size: 80px;
@@ -76,20 +87,24 @@ section#shopHome #containerShopInfo h4 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 section#shopHome #containerShopInfo p {
   margin: 0;
   color: var(--greyLight);
 }
+
 section#shopHome #containerShopInfo p.bands {
   margin: 60px 0;
   font-size: 20px;
   line-height: 22px;
   color: var(--greyLight);
 }
+
 section#shopHome #containerShopInfo p.bands span {
   font-weight: 700;
-  color: black;
+  color: #32a010;
 }
+
 section#shopHome #containerShopInfo .buy-action {
   border-radius: 0 4px 4px 0;
   padding: 20px 60px;
@@ -101,6 +116,7 @@ section#shopHome #containerShopInfo .buy-action {
   justify-content: space-between;
   z-index: 2;
 }
+
 section#shopHome #containerShopInfo .buy-action .price-value {
   color: var(--black);
   background-color: var(--green);
@@ -109,6 +125,7 @@ section#shopHome #containerShopInfo .buy-action .price-value {
   font-weight: 500;
   margin: 0;
 }
+
 section#shopHome #containerShopInfo .price .payment-conditions {
   letter-spacing: 1px;
   margin: 0;
@@ -116,14 +133,17 @@ section#shopHome #containerShopInfo .price .payment-conditions {
   font-size: 16px;
   line-height: 26px;
 }
+
 .payment-flags {
   height: 73px;
   align-self: center;
   padding: 20px;
 }
+
 .payment-flags img {
   width: 100%;
 }
+
 section#shopHome #containerShopInfo .buy-action a.shop-link {
   box-shadow: -4px 4px var(--blackLight);
   font-family: var(--font-text);
@@ -137,6 +157,7 @@ section#shopHome #containerShopInfo .buy-action a.shop-link {
   transform: translate(0, 0);
   transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
 }
+
 section#shopHome #containerShopInfo .buy-action a.shop-link:hover {
   transform: translate(-4px, 4px);
   box-shadow: 0px 0px var(--blackLight);
@@ -146,25 +167,31 @@ section#shopHome #containerShopInfo .buy-action a.shop-link:hover {
   section#shopHome {
     height: auto;
   }
+
   section#shopHome #containerShopImage .featured-image {
     position: relative;
     left: 0;
     padding: 10px 15px 15px 15px;
     width: 100%;
   }
+
   section#shopHome #containerShopImage h3 {
     font-size: 30px;
   }
+
   section#shopHome a.linkShop {
     font-size: 12px;
     font-weight: 500;
   }
+
   section#shopHome #containerShopInfo .buy-action {
     padding: 20px 15px;
   }
+
   section#shopHome #containerShopInfo .inner {
     margin: 0 15px;
   }
+
   section#shopHome #containerShopInfo {
     background: transparent;
   }

@@ -126,13 +126,14 @@ section#containerStudioInfo row {
   background-color: var(--black);
 }
 
-#containerStudioInfo .text-container {
+#containerStudioInfo .text-container p {
   display: flex;
   flex: 1;
   align-items: flex-start;
   justify-content: center;
   padding: 0 80px 40px 80px;
   min-height: 200px;
+  font-size: 22px !important;
 }
 
 #containerStudioInfo .titleBackground {

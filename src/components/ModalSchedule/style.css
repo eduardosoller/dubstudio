@@ -7,6 +7,7 @@
   height: 100vh;
   animation: fadein 0.3s linear forwards;
 }
+
 .ModalSchedule {
   min-width: 320px;
   display: flex;
@@ -23,12 +24,14 @@
   border-radius: var(--radius);
   animation: popup 0.3s ease-out forwards;
 }
+
 .ModalSchedule header i {
   color: var(--purple);
   width: 42px;
   height: 54px;
   line-height: 54px;
 }
+
 .ModalSchedule header button {
   border: 0;
   background: unset;
@@ -37,6 +40,7 @@
   top: 0;
   right: 0;
 }
+
 .ModalSchedule header {
   display: flex;
   width: 100%;
@@ -49,27 +53,36 @@
   padding: 0 15px;
   border-bottom: 2px solid var(--purple);
 }
+
 .ModalSchedule ul {
   width: 100%;
 }
+
 .ModalSchedule ul li {
   display: block !important;
 }
+
 .ModalSchedule ul li a.text-red {
   color: var(--red);
 }
+
 .ModalSchedule ul li a.text-blue {
   color: var(--blue);
 }
+
 .ModalSchedule ul li a.text-pink {
   color: var(--pink);
 }
+
 .ModalSchedule ul li a span {
+  text-align: center;
   font-size: 20px;
   line-height: 16px;
   display: block;
 }
+
 .ModalSchedule ul li a {
+  transition: opacity 0.2s linear !important;
   display: flex;
   margin: 15px;
   justify-content: center;
@@ -79,30 +92,38 @@
   font-family: var(--font-text);
   border: 0;
   border-radius: 10px;
-  background: none;
-  white-space: nowrap;
-}
-.ModalSchedule ul li a:hover {
   background-color: var(--blackLight);
-  transition: background-color 0.2s linear;
+  white-space: nowrap;
+  opacity: 1 !important;
 }
+
+.ModalSchedule ul li a:hover {
+  background-color: #2c2c2c;
+
+  opacity: .9 !important;
+}
+
 @keyframes popup {
   0% {
     margin-top: 50px;
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @keyframes fadein {
   0% {
     background-color: rgb(41, 41, 41, 0);
   }
+
   100% {
     background-color: rgb(41, 41, 41, 0.7);
   }
 }
+
 /* @keyframes fadeout {
   0% {
     opacity: 0.7;
