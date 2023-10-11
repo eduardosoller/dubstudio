@@ -12,7 +12,7 @@
 
     date_default_timezone_set('Etc/UTC');
 
-    $post_data = json_decode(file_get_contents("php://input"), true);  
+    $post_data = json_decode(file_get_contents("php://input"), true);
     $horario = "";
     foreach($post_data['horario'] as $item){
         $horario.= $item.', ';
@@ -35,20 +35,19 @@ $mail->isSMTP();
 // SMTP::DEBUG_CLIENT = client messages
 // SMTP::DEBUG_SERVER = client and server messages
 $mail->SMTPDebug = SMTP::DEBUG_SERVER;
-$mail->Host = 'smtp.kinghost.net';
+$mail->Host = '';
 $mail->Port = 587;
 $mail->SMTPAuth = true;
-$mail->Username = 'smtp@dubstudio.com.br';
-$mail->Password = 'soller4578';
+$mail->Username = '';
+$mail->Password = '';
 $mail->setFrom('site@dubstudio.com.br', '[SITE DUBSTUDIO]');
 $mail->addReplyTo($post_data['email'], $post_data['name']);
-$mail->addAddress('eduardosoller@gmail.com');
 $mail->addAddress('studiodub@gmail.com');
 $mail->Subject = $post_data['subject'];
 //convert HTML into a basic plain-text alternative body
 //$mail->msgHTML(file_get_contents('contents.html'), __DIR__);
 $mail->Body = $message;
-$mail->IsHTML(true); 
+$mail->IsHTML(true);
 //send the message, check for errors
 if ($mail->send()) {
         echo 'Sua mensagem foi enviada!'.
